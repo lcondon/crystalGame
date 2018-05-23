@@ -1,0 +1,88 @@
+body {
+    background-image: url(./../images/dark-grey-terrazzo.png);
+    background-size: 400px;
+    background-repeat: repeat;
+}
+
+header {
+    margin-top: 25px;
+}
+
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(22, 117, 117);
+    opacity: 0.8;
+    font-size: 80px !important;
+}
+
+h3 {
+    margin: 0;
+}
+
+#totals {
+    margin: 0;
+}
+
+#textBody {
+    background-color: rgba(113, 179, 48, 0.5);
+    height: fit-content;
+    width: 60%;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(247, 248, 244, 0.747);
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+#randomScore {
+    width: 40%;
+    background-color: rgba(220, 20, 20, 0.596);
+    color: rgba(247, 248, 244, 0.747);
+    font-family: 'Roboto Slab', serif;   
+    font-size: 26px;  
+    height: fit-content;
+    margin-top: 35px;
+    border-radius: 25px;
+}
+
+#winsLosses {
+    width: 50%;
+    background-color: rgb(22, 117, 117, 0.7);
+    color: rgba(247, 248, 244, 0.747);
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    height: fit-content;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+#userDiv {
+    width: 60%;
+    background-color: rgba(113, 179, 48, 0.5);
+    color: rgba(247, 248, 244, 0.747);
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+}
+
+#userRow {
+    padding: 5px;
+}
+
+.normalRow {
+    padding: 15px;
+}
+
+img {
+    max-width: 200px;
+}
+
+#gemBody {
+    width: 80%;
+}
+
+/* font-family: 'Bungee Inline', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Fjalla One', sans-serif; */
