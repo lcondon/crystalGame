@@ -17,7 +17,7 @@ var lossTotal = 0;
 
 $(document).on("load", startNewGame());
 
-function startNewGame () {
+function startNewGame() {
     rando = Math.floor(Math.random() * 101) + 19;
     goalScore.text(rando);
     score = 0;
@@ -28,39 +28,43 @@ function startNewGame () {
     yellowNumber = Math.floor(Math.random() * 11) + 1;
 }
 
-function didYouWin () {
+function didYouWin() {
     if (score === rando) {
-        alert("You win!");
+        setTimeout(function(){
+            alert("You win!");
+        }, 2000);
         winTotal++;
         wins.text(winTotal);
         startNewGame();
     } else if (score > rando) {
-        alert("You lose");
+        setTimeout(function(){
+            alert("You lose");
+        }, 2000);
         lossTotal++;
         losses.text(lossTotal);
         startNewGame();
     }
 }
 
-green.on("click", function() {
+green.on("click", function () {
     score = Number(score) + greenNumber;
     user.text(score);
     didYouWin();
 });
 
-red.on("click", function() {
+red.on("click", function () {
     score = Number(score) + redNumber;
     user.text(score);
     didYouWin();
 });
 
-blue.on("click", function() {
+blue.on("click", function () {
     score = Number(score) + blueNumber;
     user.text(score);
     didYouWin();
 });
 
-yellow.on("click", function() {
+yellow.on("click", function () {
     score = Number(score) + yellowNumber;
     user.text(score);
     didYouWin();
